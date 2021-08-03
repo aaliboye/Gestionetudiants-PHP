@@ -14,8 +14,6 @@
 
         $requet->closeCursor();
 
-
-
         header('Location: formulaire.php');
     }
 ?>

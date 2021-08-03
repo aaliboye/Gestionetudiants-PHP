@@ -1,7 +1,15 @@
 <?php
 
+session_start();
+
+
+
+
         if($_POST['mail']=="admin" AND $_POST['password']=="admin"){
-            header('Location: formulaire.php');
+                $_SESSION['login'] = 'admin';
+                $_SESSION['password'] = 'admin';
+
+                header('Locatin : formulaire.php');
         }
         else{
 ?>
