@@ -14,26 +14,8 @@
 
         $requet->closeCursor();
 
-?>
-        <script type="text/javascript">
-                document.getElementById('send').addEventListener('click', function(){
-        alert('ajout validé');
-    });
-        </script>
-<?php
+
 
         header('Location: formulaire.php');
     }
-    else{
-?>
-        <script type="text/javascript">
-        document.getElementById('send').addEventListener('click', function(){
-        alert('infos non valide');
-        });
-        </script>
-<?php
-
-    }
-    
-
 ?>
