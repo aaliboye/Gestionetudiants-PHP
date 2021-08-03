@@ -7,7 +7,7 @@
     <title>Acceuil</title>
 </head>
 <body>
-    <p> <strong>Bienvenue dans la page de connexion!</strong> </p>
+    <p> <strong>Bienvenue dans la page de connexion! veuiler saisir votre login et votre mot de passe</strong> </p>
     <form action="connexion.php" method="POST">
         admin: <input type="text" name="mail">
         password: <input type="password" name="password">
