@@ -11,11 +11,8 @@
 
     <?php
         include_once('menu.php');
-
-        session_start();
-
-        if(isset($_SESSION['login']) AND isset($_SESSION['password'])){
     ?>
+    
     <form action="inscription.php" method="POST">
         nom: <input type="text" name="nom" id="nom" required>
         <span id="nomindic"></span>
@@ -27,13 +24,7 @@
         <span id="paysindic"></span>
         <input type="submit" value="envoyer" id="send">
     </form>
-    <?php        
-        }
-        else{
-            header('Locatin : index.php');
-        }
-        
-    ?>
+    
     
 
 </body>
