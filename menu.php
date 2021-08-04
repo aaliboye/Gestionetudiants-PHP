@@ -18,7 +18,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="formulaire.php">Ajouter etudiant</a>
+          <a class="nav-link" href="formulaire.php">Ajouter etudiant</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="listeEtu.php">listes des etudiants</a>
