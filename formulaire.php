@@ -31,7 +31,7 @@
         }
         else{
     ?>
-                <p> vs n'avez pas acces a ce site </p>
+                <p> votre mot de passe et votre login est incorrect!</p>
                 <a href="index.php"> se connecter</a>
     <?php
 
