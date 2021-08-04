@@ -10,12 +10,12 @@
     <?php
         session_start();
     ?>
-    <p> <strong>Bienvenue dans la page de connexion! veuiler saisir votre login et votre mot de passe</strong> </p>
-    <form action="connexion.php" method="POST">
-        admin: <input type="text" name="mail" Required>
-        password: <input type="password" name="password" required>
-        <input type="submit">
-    </form>
-    
+     <p> <strong>Bienvenue dans la page de connexion! veuiler saisir votre login et votre mot de passe</strong> </p>
+        <form action="connexion.php" method="POST">
+            admin: <input type="text" name="mail" Required>
+            password: <input type="password" name="password" required>
+            <input type="submit">
+        </form>
+
 </body>
 </html>

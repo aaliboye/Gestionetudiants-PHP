@@ -23,6 +23,9 @@
         <li class="nav-item">
           <a class="nav-link" href="listeEtu.php">listes des etudiants</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="deconnexion.php">se deconnecter</a>
+        </li>
       </ul>
     </div>
   </div>
