@@ -11,9 +11,8 @@
         include_once('menu.php');
     ?>
 
-        <div class="row justify-content-center">
-            <div class="col-8">
-            <table class="table">
+
+        <table class="table">
             <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -25,8 +24,6 @@
                     <th scope="col">supprimer</th>
                 </tr>
             </thead>
-
-        
     <?php
 
         $bdd = new PDO('mysql:host=localhost;dbname=ecole', 'root', '');
@@ -53,7 +50,5 @@
         }
     ?>
     </table>
-    </div>
-        </div>
 </body>
 </html>   
