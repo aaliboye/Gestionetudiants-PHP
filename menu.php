@@ -29,7 +29,7 @@
         <nav class="col-4 navbar navbar-expand navbar-dark bg-dark">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.php"> <button class="btn btn-danger"> Se deconnecter</button> </a>
+              <a class="nav-link" href="deconnexion.php"> <button class="btn btn-danger"> Se deconnecter</button> </a>
             </li>
           </ul>
         </nav>
