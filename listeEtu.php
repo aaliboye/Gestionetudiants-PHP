@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +33,7 @@
         $bdd = new PDO('mysql:host=localhost;dbname=ecole', 'root', '');
         $reponse = $bdd->query('SELECT id, nom, prenom, email, pays FROM etudiants');
         while($donnee = $reponse->fetch()){
+            $_SESSION['id'] = $donnee['id'];
     ?>
        
                 <tbody>
@@ -39,12 +44,10 @@
                         <td> <?php echo $donnee['email']; ?> </td>
                         <td> <?php echo $donnee['pays']; ?> </td>
                         <td> <button class="btn btn-primary">Modifier</button> </td>
-                        <td><div class="btn btn-danger">supprimer</div></td>
+                        <td> <a href="supprimer.php"> <div class="btn btn-danger">Supprimer</div> </a> </td>
                     </tr>
                     
-                </tbody>
-            
-        
+                </tbody>   
 
     <?php
         }
