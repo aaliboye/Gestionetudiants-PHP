@@ -11,16 +11,22 @@
         include_once('menu.php');
     ?>
 
-        <table>
+        <div class="row justify-content-center">
+            <div class="col-8">
+            <table class="table">
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>nom</th>
-                    <th>prenom</th>
-                    <th>email</th>
-                    <th>pays</th>
+                    <th scope="col">#</th>
+                    <th scope="col">nom</th>
+                    <th scope="col">prenom</th>
+                    <th scope="col">email</th>
+                    <th scope="col">pays</th>
+                    <th scope="col">modifier</th>
+                    <th scope="col">supprimer</th>
                 </tr>
             </thead>
+
+        
     <?php
 
         $bdd = new PDO('mysql:host=localhost;dbname=ecole', 'root', '');
@@ -30,11 +36,13 @@
        
                 <tbody>
                     <tr>
-                        <td> <?php echo $donnee['id']; ?> </td>
+                        <th scope="row"> <?php echo $donnee['id']; ?> </th>
                         <td> <?php echo $donnee['nom']; ?> </td>
                         <td> <?php echo $donnee['prenom']; ?> </td>
                         <td> <?php echo $donnee['email']; ?> </td>
                         <td> <?php echo $donnee['pays']; ?> </td>
+                        <td> <button class="btn btn-primary">Modifier</button> </td>
+                        <td><div class="btn btn-danger">supprimer</div></td>
                     </tr>
                     
                 </tbody>
@@ -45,5 +53,7 @@
         }
     ?>
     </table>
+    </div>
+        </div>
 </body>
 </html>   

@@ -14,22 +14,27 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="formulaire.php">Ajouter etudiant</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="listeEtu.php">listes des etudiants</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="deconnexion.php">se deconnecter</a>
-        </li>
-      </ul>
+    <div class="container">
+      <div class="row">
+        <nav class="col-8 navbar navbar-expand navbar-dark bg-dark">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="formulaire.php">Ajouter Etudiant</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="listeEtu.php">liste des Etudiants</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="col-4 navbar navbar-expand navbar-dark bg-dark">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.php"> <button class="btn btn-danger"> Se deconnecter</button> </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </div>
-</nav>
 
   </body>
 </html>
