@@ -13,6 +13,14 @@
 </head>
 <body>
 
+    <style>
+        #inscription {
+            margin-left: auto;
+            margin-right: auto;
+            width: 25em
+        }
+    </style>
+
     <?php
         include_once('menu.php');
 
@@ -21,7 +29,7 @@
         if($_SESSION['login']=="admin" AND $_SESSION['password']=="admin"){
     ?>
         <div class="container">
-            <form action="inscription.php" method="POST" class="form-group">
+            <form action="inscription.php" method="POST" class="form-group" id="inscription">
                 <div class="row">
                     <div class="col">
                         <label for="" class="form-label"> nom: <input class="form-control" type="text" name="nom" id="nom" required></label>

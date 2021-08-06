@@ -13,14 +13,29 @@
 <body>
     <?php
         session_start();
+
+        if($_SESSION['login']=="admin" AND $_SESSION['password']=="admin"){
+            header('Location: listeEtu.php');
+        }
+        else{
     ?>
+
+    <style>
+        #connexion{
+            margin-left: auto;
+            margin-right: auto;
+            width: 20em
+        }
+    </style>
+       
+    
     <div class="container ">
         <div class="alert alert-success text-center">
             <p><strong>Bienvenue dans la page de connexion! veuiler saisir votre login et votre mot de passe</strong> </p>
         </div>
         
-        <div class="row">
-            <form action="connexion.php" method="POST" class="form-group">
+        <div class="row" >
+            <form action="connexion.php" method="POST" class="form-group" id="connexion">
                 <div class="col ">
                     <label for="" class="form-label"> Login: <input class="form-control" type="text" name="mail" Required ></label>
                 </div>
@@ -37,6 +52,9 @@
             </form>
         </div>
     </div>
+    <?php
+     }
+     ?>
 
 </body>
 </html>
