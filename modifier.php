@@ -32,6 +32,9 @@
                     Vous etes dans la page de modification !:)
                 </p>
             </div>
+        <?php
+            if($_SESSION['login']=="admin" AND $_SESSION['password']=="admin"){
+        ?>
             <form action="ValidModif.php" method="POST" class="form-group">
                 <div class="row">
                     <div class="col">
@@ -67,7 +70,16 @@
                 
             </form>
         </div>
-
+        <?php
+            }
+            else{
+        ?>
+            <p> vous ne pouver pas modifier la liste il connexion obligatoire</p>
+            <a href="index.php"> se connecter</a>
+        <?php
+                         
+            }
+        ?>
 </body>
 </html>
 <?php

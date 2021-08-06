@@ -1,14 +1,22 @@
 <?php
     session_start();
 
-    $bdd = new PDO('mysql:host=localhost;dbname=ecole', 'root', '');
+    if($_SESSION['login']=="admin" AND $_SESSION['password']=="admin"){
 
-    $requet = $bdd->prepare('DELETE FROM etudiants WHERE id = ?');
+        $bdd = new PDO('mysql:host=localhost;dbname=ecole', 'root', '');
 
-    $requet->execute(array($_SESSION['id']));
+        $requet = $bdd->prepare('DELETE FROM etudiants WHERE id = ?');
 
-    $requet->closeCursor();
+        $requet->execute(array($_SESSION['id']));
 
-    header('Location: listeEtu.php');
+        $requet->closeCursor();
 
+        header('Location: listeEtu.php');
+    }
+    else{  
+?>
+        <p> vous ne pouver pas supprimer l'etudiant il faut d'abord se connecter</p>
+        <a href="index.php"> se connecter</a>
+<?php
+    }
 ?>
