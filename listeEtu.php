@@ -43,7 +43,7 @@
                         <td> <?php echo $donnee['prenom']; ?> </td>
                         <td> <?php echo $donnee['email']; ?> </td>
                         <td> <?php echo $donnee['pays']; ?> </td>
-                        <td> <button class="btn btn-primary">Modifier</button> </td>
+                        <td> <a href="modifier.php"> <div class="btn btn-primary">Modifier</div> </a> </td>
                         <td> <a href="supprimer.php"> <div class="btn btn-danger">Supprimer</div> </a> </td>
                     </tr>
                     
