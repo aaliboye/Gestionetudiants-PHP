@@ -28,7 +28,7 @@
                         <span id="nomindic"></span>
                     </div>
                 </div> 
-                <div class="row">
+                <div class="row ">
                     <div class="col">
                         <label for="" class="form-label"> prenom: <input class="form-control" type="text" name="prenom" id="prenom" required></label>
                         <span id="nomindic"></span>

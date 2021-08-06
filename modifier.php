@@ -27,7 +27,7 @@
 <body>
 
         <div class="container">
-            <div>
+            <div class="alert alert-info text-center">
                 <p>
                     Vous etes dans la page de modification !:)
                 </p>
